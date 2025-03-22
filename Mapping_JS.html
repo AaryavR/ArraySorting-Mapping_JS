@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Mapping in JS</title>
+   </head>
+   <body>
+        <div>
+            <p id="id">...</p>
+        </div>
+
+        <script>
+
+            var numbers = [9, 0, 102, 38278, 28, 34, 1]
+
+            function ma(num) {
+                return num*10
+            }
+
+            var newarray = numbers.map(ma)
+            document.getElementById("id").innerHTML = newarray
+        </script>
+
+
+   </body>
+
+
+</html>
