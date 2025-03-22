@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sorting Arrays in JS</title>
+    </head>
+    <body>
+        <div>
+            <p>Click the buttons to sort the array</p>
+            <button onClick="a()">Ascending</button>
+            <button onClick="d()">Descending</button>
+            <p id="pluh"></p>
+        </div>
+
+        <script>
+            var array = [12, 40, 48, 901, 89];
+            document.getElementById("pluh").innerHTML = array;
+
+            function a() {
+                array.sort(function(a,b){return a-b});
+                document.getElementById("pluh").innerHTML = array;
+            };
+
+            function d() {
+                array.sort(function(a,b){return b-a});
+                document.getElementById("pluh").innerHTML = array;
+            }
+
+        </script>
+
+    </body>
+
+
+
+</html>
