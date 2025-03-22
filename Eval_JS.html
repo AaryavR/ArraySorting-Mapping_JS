@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Eval in JS</title>
+    </head>
+    <body>
+        <p id="p"></p>
+
+        <script>
+            var x = 12
+            var y = 21984
+            var a = eval("x-y") + "<br>"
+            var b = eval("x+y") + "<br>"
+            var c = eval("2+2") + "<br>"
+
+
+            var result = a + b + c
+            document.getElementById("p").innerHTML = result
+
+        </script>
+
+    </body>
+
+</html>
