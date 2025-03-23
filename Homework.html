@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Array Mapping & Sorting</title>
+    </head>
+    <body>
+
+        <h2>Array Mapping and Sorting</h2>
+
+        <button onclick="processArray()">Generate & Sort</button>
+
+        <h3>Original Array:</h3>
+        <p id="original"></p>
+
+        <h3>Mapped Array (x2):</h3>
+        <p id="mapped"></p>
+
+        <h3>Ascending Order:</h3>
+        <p id="ascending"></p>
+
+        <h3>Descending Order:</h3>
+        <p id="descending"></p>
+
+        <script>
+            function processArray() {
+                let array = [5, 2, 9, 1, 6];
+                document.getElementById("original").textContent = array.join(", ");
+
+                let mappedArray = array.map(num => num * 2);
+                document.getElementById("mapped").textContent = mappedArray.join(", ");
+
+                let ascending = [...mappedArray].sort((a, b) => a - b);
+                document.getElementById("ascending").textContent = ascending.join(", ");
+
+                let descending = [...mappedArray].sort((a, b) => b - a);
+                document.getElementById("descending").textContent = descending.join(", ");
+            }
+        </script>
+
+    </body>
+</html>
